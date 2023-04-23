@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'varela round' , sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* -------------------------web-header-start-------------------------- */
+.web-header{
+    width:100%;
+    height: 55px;
+    background-color: #2b1c0a;
+    opacity: .7;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+.web-header ul {
+float: right;
+margin-right: 40px;
+}
+.web-header ul li {
+    display:inline-block;
+    padding-right: 41px;
+    padding-top: 13px;
+    font-size:larger;
+    vertical-align: middle;
+}
+.web-header ul li a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+.web-header .img1{
+    height: 62px;
+    width: 70px;
+    margin-left: 80px;
+}
+/* ----------------------------web-header-end--------------------------- */
+/* -------------------------------parent1-start---------------------------- */
+.parent1{
+    height: 100vh;
+    background: url(../images/1.png);
+    position: relative;
+}
+
+.parent1 .overlay{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+.parent1 .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.parent1 .content h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.parent1 .content p {
+    color: rgb(208, 208, 125);
+    font-size: 20px;
+    padding: 10px;
+}
+.parent1 .content button {
+    width: 163px;
+    height: 59px;
+    margin: 10px 5px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight:200;
+    text-transform: capitalize;
+}
+.parent1 .content .btn2 {
+    background-color: blue;
+    color: aliceblue;
+}
+.parent1 .content button:hover {
+    opacity: .7;
+}
+/* ----------------------------------paren1-end------------------------------------------- */
+/* ----------------------------------parent2-srart---------------------------------------- */
+.parent2{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.parent2 .content{
+    width: 80%;
+    margin: auto;
+}
+/* head */
+.parent2 .content .head {
+    margin: auto;
+    text-align: center;
+}
+.parent2 .content .head h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.parent2 .content .head .line {
+    width: 150px;
+    height: 3px;
+    background-color: #6195ff;
+    margin: 7px auto 15px;
+}
+/* boxes */
+.parent2 .big-box{
+    margin: auto;
+    padding-top: 50px;
+}
+.clearfix{
+    clear: both;
+}
+.parent2 .big-box div {
+    position: relative;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    float: left;
+    width: calc(90%/3);
+    text-align: center;
+    padding: 30px;
+}
+.parent2 .big-box .box2 {
+    margin: 0px calc(10%/2);
+}
+.parent2 .big-box div i {
+    padding: 10px;
+    font-size: 27px;
+    color: #6195ff;
+}
+.parent2 .big-box div h2 {
+    padding: 10px;
+    font-size: 30px;
+}
+.parent2 .big-box div p{
+    padding: 20px;
+    font-size: 16px;
+    color: #777;
+}
+.parent2 .big-box div a{
+    text-decoration: none;
+}
+/* transitions */
+.big-box div:hover h2{
+    color: aliceblue;
+    transition: 1.5s;
+}
+.big-box div::after{
+    content: "";
+    height: 0%;
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #333;
+    z-index: -1;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+.big-box div:hover::after{
+    height: 100%;
+    width: 100%;
+    transition: .6s;
+}
+/* ----------------------------------parent2-end---------------------------------------- */
+/* ----------------------------------parent3-start---------------------------------------- */
+.parent3{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-color: #ececec;
+}
+.parent3 .content .head {
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+}
+.parent3 .content .head h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.parent3 .content .head .line {
+    width: 150px;
+    height: 3px;
+    background-color: #6195ff;
+    margin: 7px auto 15px;
+}
+.parent3 .content{
+    width: 80%;
+    margin: 0px auto 70px;
+}
+.parent3 .content .images div{
+    width: calc(90%/3);
+    float: left;
+    background-color:#777;
+    position: relative;
+    height: 200px;
+}
+.parent3 .content .images .div2{
+    margin: 0px calc(10%/2);
+}
+.parent3 .content .images div img{
+    display:block;
+    width:80%;
+    margin-left: calc(10%);
+    height: 200px;
+}
+/* overlay */
+.parent3 .content .images div .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 85, 85);
+    opacity: 0;
+    z-index: 1;
+    padding: 10px;
+}
+.parent3 .content .images div:hover .overlay{
+    opacity: .7;
+    transition: 1s;
+    background-color: rgb(85, 85, 85);
+}
+
+.parent3 .content .images div .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    visibility: hidden;
+    opacity: 0;
+}
+.parent3 .content .images div:hover .content{
+    visibility: visible;
+    transition: 1s;
+    transition-delay: .5s;
+    opacity: 1;
+}
+.parent3 .content .images div .content p{
+    padding: 10px 0px;
+    color: aliceblue;
+    font-weight: 800;
+    font-size: x-large;
+}
+.parent3 .content .images div .content .p1{
+    color: #6195ff;
+    font-weight: 100;
+}
+.parent3 .content .images div .content .icons i{
+    color: blue;
+    background-color: #6195ff;
+    font-size: x-large;
+    display: inline-block;
+    padding: 4px;
+
+}
+/* ----------------------------------parent3-end---------------------------------------- */
+/* ----------------------------------parent4-start---------------------------------------- */
+.parent4{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: ghostwhite;
+}
+.parent4 .content{
+    width: 80%;
+    margin: 20px auto ;
+}
+.parent4 .content .head {
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+}
+.parent4 .content .head h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.parent4 .content .head .line {
+    width: 150px;
+    height: 3px;
+    background-color: #6195ff;
+    margin: 7px auto 15px;
+}
+/* boxes */
+.parent4 .boxes{
+    margin: auto;
+}
+.parent4 .boxes>div {
+    position: relative;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    float: left;
+    width: calc(90%/3);
+    text-align: center;
+    padding: 30px 15px;
+    background-color: transparent;
+}
+#box2{
+    margin: 0px calc(10%/2);
+}
+#box3{
+    margin: 0px calc(10%/2);
+}
+.parent4 .boxes .box .text{
+    padding-left: 15px;
+    width: 70%;
+}
+.parent4 .boxes i {
+    font-size: 40px;
+    color: #6195ff;
+}
+.parent4 .boxes .box>div{
+    float: left;
+}
+/* hover */
+.parent4 .content .boxes .box .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 0%;
+    background-color: rgb(85, 85, 85);
+    opacity: 0;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    z-index: -1;
+}
+.parent4 .content .boxes .box:hover .overlay{
+    opacity: .7;
+    transition: .5s;
+    background-color: rgb(203, 195, 195);
+    width: 100%;
+    height: 100%;
+}
+.parent4 .content .boxes .box:hover .text{
+    color: #6195ff;
+    transition: .5s;
+}
+/* ----------------------------------parent4-end---------------------------------------- */
+/* ----------------------------------parent5-start---------------------------------------- */
+.parent5{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: mistyrose;
+}
+.parent5 .content{
+    width: 80%;
+    margin: 20px auto ;
+}
+.parent5 .content .left{
+float: left;
+width: 40%;
+color: #555;
+font-size: larger;
+font-weight: 600;
+}
+.parent5 .content .right{
+float: left;
+width: 30%;
+margin-left: 20%;
+}
+.parent5 .content .right .image{
+width:100%;
+background-color: rgb(173, 173, 173);
+}
+.parent5 .content .right .image img{
+width: 80%;
+margin: auto;
+display: block;
+}
+.parent5 .content .left h2{
+padding: 20px;
+color: rgb(0, 0, 0);
+font-size: xx-large;
+font-weight: 700;
+padding-left: 0px;
+}
+.parent5 .content .left p{
+padding: 15px;
+}
+.parent5 .content .left ul{
+font-size: x-large;
+padding: 10px;
+}
+.parent5 .content .left li{
+padding: 7px;
+list-style-type: none; 
+}
+.parent5 .content .right .points{
+text-align: center;
+}
+.parent5 .content .right .points i{
+color: rgb(255, 255, 255);
+display: inline-block;
+padding:5px 10px;
+}
+.parent5 .content .right .points .ii{
+color: #6195ff;
+}
+.parent5 .content .left li::before{
+content: "\f058";
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+font-size: 20px;
+vertical-align: middle;
+margin-right: 3px;
+color: #6195ff;
+}
+.parent5 .content .head .line {
+    width: 230px;
+    height: 4px;
+    background-color: #6195ff;
+    margin-top: -11px ;
+    margin-bottom: 10px;
+}
+/* ----------------------------------parent5-end---------------------------------------- */
+/* ----------------------------------section1-start---------------------------------------- */
+.section1{
+    height: 300px;
+    color: rgb(80, 77, 77);
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    background-image: url(../images/jo2.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section1 .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.section1 .content{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 100px;
+}
+.section1 .content div{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.section1 .content div .text{
+    font-size: large;
+}
+.section1 .content div i{
+    color: #6195ff;
+    padding-bottom: 15px;
+}
+/* ----------------------------------section1-end---------------------------------------- */
+/* ----------------------------------parent6-start---------------------------------------- */
+.parent6{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: aliceblue;
+    color: rgb(80, 77, 77);
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent6 .content{
+    width: 80%;
+    margin: 20px auto ;
+}
+.parent6 .content .box{
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    float: left;
+    width: calc(80%/3);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+#second{
+    margin: 0px calc(10%);
+}
+.parent6 .content .box h2{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.parent6 .content .box div{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    margin: auto;
+    border-color:#6195ff ;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+.parent6 .content .box div span{
+font-weight: 900;
+font-size: 35px;
+}
+.parent6 .content .box p{
+    padding: 5px;
+}
+.parent6 .content .box button{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.parent6 .content .box::after{
+    content:"";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #777;
+    opacity: 0;
+    z-index: -1;
+}
+.parent6 .content .box:hover::after{
+    height: 100%;
+    opacity: 0.5;
+    transition: .5s;
+}
+/* ----------------------------------parent6-end---------------------------------------- */
+/* ----------------------------------section2-start---------------------------------------- */
+.section2{
+    height: 400px;
+    color: #6195ff;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    background-image: url(../images/jo6.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section2 .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+.section2 .content{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 123px;
+}
+.section2 .content .box{
+    float: left;
+    width: 45%;
+    text-align: center;
+}
+.section2 .content #pox2{
+    margin-left: 10%;
+}
+.section2 .content .box img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    vertical-align:sub;
+}
+.section2 .content .box .upper{
+    display: inline-block;
+}
+.section2 .content .box >p{
+    color: antiquewhite;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding-top: 31px;
+}
+
+
+
+/* ----------------------------------section2-end---------------------------------------- */
+/* ----------------------------------parent7-start---------------------------------------- */
+.parent7{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: white;
+    color:#555;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent7 .content{
+    width: 80%;
+    margin: 20px auto ;
+}
+.parent7 .content .box{
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    float: left;
+    width: calc(80%/3);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+#second2{
+    margin: 0px calc(10%);
+}
+.parent7 .content .box img{
+    width: 70%;
+}
+.parent7 .content .box i{
+    color:#6195ff;
+    font-size:17px;
+    vertical-align: middle;
+}
+.parent7 .content .box h2{
+    color: #333;
+}
+.parent7 .content .box a{
+    text-decoration: none;
+}
+.parent7 .content .box span{
+    padding: 5px;
+}
+.parent7 .content .box::after{
+    content: "";
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #777;
+    opacity: 0;
+    z-index: -1;
+}
+.parent7 .content .box:hover::after{
+    height: 100%;
+    opacity: 0.5;
+    transition: .5s;
+}
+/* ----------------------------------parent7-end---------------------------------------- */
+/* ----------------------------------footer-start---------------------------------------- */
+.web-footer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: grey;
+    color: rgb(210, 210, 210);
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.web-footer .content{
+    width: 25%;
+    margin: auto;
+}
+.web-footer .content img {
+    width:100%;
+}
+.web-footer .content i{
+background-color:#6195ff ;
+color: white;
+font-size: x-large;
+display: inline-block;
+width: 40px;
+height: 40px;
+line-height: 40px;
+margin: auto;
+border-radius: 50%;
+}
+.web-footer .content div{
+    text-align: center;
+    padding: 10px;
+}
+.web-footer .content p{
+    text-align: center;
+    font-size: large;
+}
+/* ----------------------------------footer-end---------------------------------------- */
